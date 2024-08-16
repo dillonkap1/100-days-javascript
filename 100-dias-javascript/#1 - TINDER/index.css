@@ -1,0 +1,44 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    user-select: none;
+    background-color: #f0f0f0;
+}
+
+main {
+    background: url(./img/iphone.webp) no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 640px;
+    display: flex;
+    filter: drop-shadow(0 0 10px black);
+}
+
+section{
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    padding: 16px 6px;
+    margin: 24px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 24x;
+        height: 24px;
+    }
+}
